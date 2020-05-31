@@ -36,6 +36,3 @@ docker run \
 docker exec -it mongodb \
     mongo --host localhost -u admin -p senhasecreta --authenticationDatabase admin \
     --eval "db.getSiblingDB('heroes').createUser({user: 'fabricio', pwd: 'senhasecreta', roles: [{role: 'readWrite', db: 'heroes'}]})"
-
-
-## ---- ip access: http://192.168.99.100:port
